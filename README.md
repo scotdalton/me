@@ -1,4 +1,4 @@
 Scot Dalton
 ===
 
-Code for scotdalton.com
+Code for http://scotdalton.com

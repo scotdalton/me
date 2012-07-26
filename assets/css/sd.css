@@ -4,6 +4,10 @@
     padding-top:60px;
     padding-bottom:40px;
   }
+  body.resume{
+    padding-top:100px;
+    padding-bottom:40px;
+  }
 }
 /* Subnav */
 .subnav {

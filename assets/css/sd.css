@@ -8,12 +8,12 @@
     padding-top:100px;
     padding-bottom:40px;
   }
-  .align-left{
-    text-align: left;
-  }
-  .align-right{
-    text-align: right;
-  }
+}
+.align-left{
+  text-align: left;
+}
+.align-right{
+  text-align: right;
 }
 /* Subnav */
 .subnav {

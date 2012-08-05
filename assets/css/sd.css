@@ -79,10 +79,6 @@
           border-radius: 0 0 4px 4px;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  visibility: hidden;
-}
-
 /* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
 @media (min-width: 980px) {
   section{

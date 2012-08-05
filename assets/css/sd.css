@@ -130,7 +130,7 @@ address a, address span{
 
 @media (max-width: 767px) {
   address a, address span{
-    font-size: 100%;
+    font-size: 110%;
   }
 }
 

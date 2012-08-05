@@ -122,8 +122,15 @@
   background-image: none !important;
 }
 address a, address span{
-  font-size: 120%;
-  line-height: 120%;
+  font-size: 125%;
+  line-height: 125%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+@media (max-width: 767px) {
+  address a, address span{
+    font-size: 100%;
+  }
+}
+

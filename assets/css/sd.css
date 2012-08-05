@@ -78,8 +78,8 @@
           border-radius: 0 0 4px 4px;
 }
 
-/* Fixed subnav on scroll, but only for 1200px */
-@media (min-width: 1200px) {
+/* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+@media (min-width: 980px) {
   section{
     padding-top: 100px;
   }

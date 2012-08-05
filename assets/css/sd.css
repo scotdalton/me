@@ -114,10 +114,11 @@
 }
 /* LARGE DESKTOP SCREENS */
 @media (min-width: 1210px) {
-
   /* Update subnav container */
   .subnav-fixed .nav {
     width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
   }
-
+}
+[class^="icon-"], [class*=" icon-"] {
+  background-image: none !important;
 }

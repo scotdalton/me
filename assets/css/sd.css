@@ -121,7 +121,8 @@
 [class^="icon-"], [class*=" icon-"] {
   background-image: none !important;
 }
-address {
+address a{
   font-size: 125%;
   line-height: 125%;
+  margin-bottom: 1em;
 }

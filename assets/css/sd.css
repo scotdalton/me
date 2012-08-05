@@ -121,3 +121,6 @@
 [class^="icon-"], [class*=" icon-"] {
   background-image: none !important;
 }
+address {
+  font-size: 120%;
+}

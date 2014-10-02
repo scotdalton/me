@@ -8,47 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Scot Dalton on the World Wide Web. Bootstrapped by Twitter and Font Awesome - http://fortawesome.github.com/Font-Awesome.">
     <meta name="author" content="Scot Dalton">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/sd.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/application.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active">
-                <a href="/"><i class="icon-home"></i> Home</a>
-              </li>
-              <li>
-                <a href="/resume"><i class="icon-pencil"></i> Resume</a>
-              </li>
-              <!-- <li>
-                <a href="/blog">Blog</a>
-              </li> -->
-              <li>
-                <a href="https://github.com/scotdalton"><i class="icon-github"></i> GitHub</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <header class="hero-unit">
+    <nav>
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <li><a href="/resume"><i class="fa fa-file-text fa-lg"></i> Resume</a></li>
+        <li><a href="https://github.com/scotdalton"><i class="fa fa-github fa-lg"></i> GitHub</a></li>
+      </ul>
+    </nav>
+    <section class="container leader">
+      <header>
         <h1>Scot Dalton</h1>
         <address>
-          <a href="mailto:scotdalton@gmail.com"><i class="icon-envelope"></i> scotdalton@gmail.com</a>&nbsp;&nbsp;&nbsp;
-          <!-- <a href="tel:9179237221" class="visible-phone"><i class="icon-phone"></i> (917) 923-7221</a><span class="hidden-phone"><i class="icon-phone"></i> (917) 923-7221</span> -->
+          <a href="mailto:scotdalton@gmail.com"><i class="fa fa-envelope"></i> scotdalton@gmail.com</a>
         </address>
-        <p>I'm a <a href="https://maps.google.com/maps?q=Brooklyn">Brooklyn</a> based Ruby and Java developer interested in ICTD.</p>
-        <p><a href="resume" class="btn btn-primary btn-large">Learn more »</a></p>
       </header>
-      <footer>
-        <p>This site was bootstrapped by <a href="http://twitter.github.com/bootstrap">Twitter</a> and <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.</p>
-      </footer>
-    </div>
+      <article>
+        <p class="lead">I'm a <a href="https://maps.google.com/maps?q=Brooklyn">Brooklyn</a> based Ruby and Java developer interested in ICTD.</p>
+        <p><a href="resume" class="btn btn-primary btn-large">Learn more »</a></p>
+      </article>
+    </section>
+    <footer class="container">
+      <p>This site was bootstrapped by <a href="http://twitter.github.com/bootstrap">Twitter</a> and <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.</p>
+    </footer>
   </body>
 </html>

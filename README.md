@@ -1,4 +1,3 @@
-Scot Dalton
-===
+# Me
 
-Code for http://scotdalton.com
+Code for http://scotdalton.me

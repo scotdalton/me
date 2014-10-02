@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'rake', '~> 10.3.2'
+gem 'compass', '~> 1.0.1'
+gem 'bootstrap-sass', '~> 3.2.0.2'
+gem 'font-awesome-sass', '~> 4.2.0'

@@ -37,6 +37,13 @@
       background-color: transparent !important;
     }
   }
+  &.nav-justified {
+    @media (min-width: $screen-sm) and (max-width: $screen-md) {
+      &>li {
+        font-size: 75%;
+      }
+    }
+  }
 }
 
 .detail {

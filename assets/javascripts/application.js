@@ -38,7 +38,8 @@ angular.module('resumeApp', ['ngRoute','ui.bootstrap']).
       })
   })
   .controller('ResumeCtrl', function($scope) {
-  })
-  .controller('NavCollapseCtrl', function($scope) {
-    $scope.isCollapsed = true
+    $scope.isCollapsed = true;
+    $scope.$on('$locationChangeStart', function(event) {
+      $scope.isCollapsed = true;
+    });
   });

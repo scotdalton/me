@@ -15,6 +15,7 @@
   background-color: $gray-lighter;
   @include border-radius(4px, 4px);
   @include box-shadow($gray-dark 2px 2px 10px);
+  hr { border-top: 2px solid $gray-light; }
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

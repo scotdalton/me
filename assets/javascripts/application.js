@@ -1,28 +1,28 @@
-angular.module('resumeApp', ['ngRoute']).
+angular.module('resumeApp', ['ngRoute','ui.bootstrap']).
   config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/goal.html'
       })
       .when('/goal', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/goal.html'
       })
       .when('/education', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/education.html'
       })
       .when('/links', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/links.html'
       })
       .when('/private', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/private.html'
       })
       .when('/public', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/public.html'
       })
       .when('/publications', {
@@ -30,14 +30,15 @@ angular.module('resumeApp', ['ngRoute']).
         templateUrl:'/resume/sections/publications.html'
       })
       .when('/technologies', {
-        controller:'ResumeController',
+        controller:'ResumeCtrl',
         templateUrl:'/resume/sections/technologies.html'
       })
       .otherwise({
         redirectTo: '/'
       })
   })
-  .controller('ResumeController', function($scope) {
-    $scope.body_class = 'resume';
-    $scope.tabs = {home: {class: ''}, resume: {class: 'active'}};
+  .controller('ResumeCtrl', function($scope) {
+  })
+  .controller('NavCollapseCtrl', function($scope) {
+    $scope.isCollapsed = true
   });

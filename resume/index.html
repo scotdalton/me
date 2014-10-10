@@ -9,6 +9,7 @@
     <link href="/assets/css/application.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular-route.min.js"></script>
+    <script src="/assets/javascripts/ui-bootstrap-custom-tpls-0.10.0.js"></script>
     <script src="/assets/javascripts/application.js"></script>
   </head>
   <body>
@@ -19,16 +20,22 @@
         <li><a href="https://github.com/scotdalton"><i class="fa fa-github fa-lg"></i> GitHub</a></li>
       </ul>
     </nav>
-    <nav ng-cloak class="nav-sections">
-      <ul class="nav nav-pills nav-justified">
-        <li><a ng-href="#/goal">Goal</a></li>
-        <li><a ng-href="#/education">Education</a></li>
-        <li><a ng-href="#/public">Public Service Experience</a></li>
-        <li><a ng-href="#/private">Private Sector Experience</a></li>
-        <li><a ng-href="#/publications">Publications</a></li>
-        <li><a ng-href="#/technologies">Technologies</a></li>
-        <li><a ng-href="#/links">Links</a></li>
-      </ul>
+    <nav class="navbar navbar-default" ng-controller="NavCollapseCtrl">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+        <ul class="nav nav-pills nav-justified collapse navbar-collapse" collapse="isCollapsed">
+          <li><a ng-href="#/goal">Goal</a></li>
+          <li><a ng-href="#/education">Education</a></li>
+          <li><a ng-href="#/public">Public Service</a></li>
+          <li><a ng-href="#/private">Private Sector</a></li>
+          <li><a ng-href="#/publications">Publications</a></li>
+          <li><a ng-href="#/technologies">Technologies</a></li>
+          <li><a ng-href="#/links">Links</a></li>
+        </ul>
     </nav>
     <div ng-view></div>
   </body>

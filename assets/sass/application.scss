@@ -17,6 +17,8 @@
   @include box-shadow($gray-dark 2px 2px 10px);
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 .nav {
   background-color: $gray-lighter;
 }

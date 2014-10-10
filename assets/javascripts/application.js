@@ -1,4 +1,4 @@
-angular.module('resumeApp', ['ngRoute','ui.bootstrap']).
+angular.module('resumeApp', ['ngRoute','ngAnimate','ui.bootstrap']).
   config(function($routeProvider) {
     $routeProvider
       .when('/', {
@@ -21,13 +21,13 @@ angular.module('resumeApp', ['ngRoute','ui.bootstrap']).
         controller:'ResumeCtrl',
         templateUrl:'/resume/sections/private.html'
       })
+      .when('/publications', {
+        controller:'ResumeCtrl',
+        templateUrl:'/resume/sections/publications.html'
+      })
       .when('/public', {
         controller:'ResumeCtrl',
         templateUrl:'/resume/sections/public.html'
-      })
-      .when('/publications', {
-        controller:'ResumeController',
-        templateUrl:'/resume/sections/publications.html'
       })
       .when('/technologies', {
         controller:'ResumeCtrl',

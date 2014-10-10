@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="resumeApp">
   <head>
+    <title>Scot Dalton</title>
     <meta charset="utf-8">
-    <title>Scot Dalton - Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Scot Dalton on the World Wide Web. Bootstrapped by Twitter and Font Awesome.">
     <meta name="author" content="Scot Dalton">
     <link href="/assets/css/application.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular-route.min.js"></script>
+    <script src="/assets/javascripts/application.js"></script>
   </head>
-  <body class="resume">
+  <body>
     <nav>
       <ul class="nav nav-tabs nav-justified">
         <li><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
@@ -16,170 +19,17 @@
         <li><a href="https://github.com/scotdalton"><i class="fa fa-github fa-lg"></i> GitHub</a></li>
       </ul>
     </nav>
-    <section class="container leader">
-      <header>
-        <h1>Scot Dalton</h1>
-        <address>
-          <a href="mailto:scotdalton@gmail.com"><i class="fa fa-envelope"></i> scotdalton@gmail.com</a>
-        </address>
-      </header>
-      <article>
-        <p class="lead">I'm a <a href="https://maps.google.com/maps?q=Brooklyn">Brooklyn</a> based Ruby and Java developer interested in ICTD.</p>
-        <p class="lead">My goal is to combine my public service and international development background with a computer science skill set to pursue opportunities in the computing for social good field.</p>
-      </article>
-    </section>
-    <nav class="container nav-sections">
+    <nav ng-cloak class="nav-sections">
       <ul class="nav nav-pills nav-justified">
-        <li><a href="#education">Education</a></li>
-        <li><a href="#public">Non-Profit Experience</a></li>
-        <li><a href="#private">Private Sector Experience</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#technologies">Technologies</a></li>
-        <li><a href="#links">Links</a></li>
+        <li><a ng-href="#/goal">Goal</a></li>
+        <li><a ng-href="#/education">Education</a></li>
+        <li><a ng-href="#/public">Public Service Experience</a></li>
+        <li><a ng-href="#/private">Private Sector Experience</a></li>
+        <li><a ng-href="#/publications">Publications</a></li>
+        <li><a ng-href="#/technologies">Technologies</a></li>
+        <li><a ng-href="#/links">Links</a></li>
       </ul>
     </nav>
-    <section id="education" class="container">
-      <h2>Education</h2>
-      <article>
-        <h3>New York University<br/> <small>Courant Institute of Mathematical Sciences</small></h3>
-        <div>Master of Science in Computer Science</div>
-        <div class="row">
-          <div class="col-md-4"><i class="fa fa-graduation-cap"></i> May 2014</div>
-          <div class="col-md-4"><i class="fa fa-ra"></i> GPA 3.75</div>
-        </div>
-        <p class="detail">For my thesis project, I worked in a three person team to developed a web service for <a href="www.mdsol.com">Medidata Solutions</a> that algorithmically auto-scales AWS instances via Amazon APIs for registered applications.</p>
-      </article>
-      <hr />
-      <article>
-        <h3>New York University<br/> <small>Robert F. Wagner Graduate School of Public Service</small></h3>
-        <div>Master of Public Administration in International Public Policy</div>
-        <div class="row">
-          <div class="col-md-4"><i class="fa fa-graduation-cap"></i> May 2010</div>
-          <div class="col-md-4"><i class="fa fa-ra"></i> GPA 3.85</div>
-        </div>
-        <p class="detail">My thesis was an evaluation of</span> <span><a href="http://www.worldlearning.org/what-we-do/projects/community-connections/">Community Connections</a></span><span>, a USAID funded international exchange program.</p>
-      </article>
-      <hr />
-      <article>
-        <h3>New York University<br/> <small>College of Arts and Sciences</small></h3>
-        <div>Bachelor of Arts, Mathematics</div>
-        <div class="row">
-          <div class="col-md-4"><i class="fa fa-graduation-cap"></i> May 1997</div>
-        </div>
-        <p class="detail">In my junior year, I received the Junior Year Mathematics Prize for excellence in mathematics and service to the department and upon graduation received the NYU Founders Award.</p>
-      </article>
-    </section>
-    <section id="public" class="container">
-      <h2>Non-Profit / Public Service Experience</h2>
-      <article>
-        <h3>New York University <small>New York, NY</small></h3>
-        <div>Senior Web Developer, Division of Libraries</div>
-        <div><i class="fa fa-calendar"></i> November 2004 – Present</div>
-        <h4>Responsibilities</h4>
-        <p>
-          Lead the web services department to implement high performance, scalable solutions with Ruby on Rails, Java, Perl, PHP, and MySQL.
-        </p>
-        <p>
-          Manage Library ITS staff including DBA, System Administrators and Client Services during LITS Director’s temporary six month reassignment.
-        </p>
-        <p>
-          Present innovative NYU Libraries’ development initiatives at national and international conferences.
-        </p>
-        <p>
-          Mentor junior staff members in software development best practices, including test driven development and GitHub based workflows.
-        </p>
-      </article>
-      <hr />
-      <article>
-        <h3>Taproot Foundation <small>New York, NY</small></h3>
-        <div>Software/Web Developer Volunteer</div>
-        <div><i class="fa fa-calendar"></i> August 2004 – March 2011</div>
-        <h4>Clients: iMentor, Mayor’s Alliance for NYC’s Animals</h4>
-        <p>Collaborate with Taproot team members and client staffs to provide technical expertise on websites, donor databases, and Salesforce.com integration</p>
-      </article>
-      <hr />
-      <article>
-        <h3>United States Peace Corps <small>Filabusi, Zimbabwe</small></h3>
-        <div>Mathematics Teacher</div>
-        <div><i class="fa fa-calendar"></i> October 1997 – December 1999</div>
-        <h4>Highlights</h4>
-        <p>Instructed large multilevel classes in mathematics, improving national exam pass rates by 400%.</p>
-        <p>Established a soccer club for both girls and boys to promote self confidence.</p>
-        <p>Coached soccer team to the semi-finals of Zimbabwe’s national tournament, a first for the school.</p>
-      </article>
-    </section>
-    <section id="private" class="container">
-      <h2>Private Sector Experience</h2>
-      <article>
-        <h3>Accenture <small>New York, NY</small></h3>
-        <div>Senior Technical Consultant, Financial Services Industry</div>
-        <div><i class="fa fa-calendar"></i> August 2000 – October 2004</div>
-        <hr />
-        <article>
-          <h4>Client: Morgan Stanley</h4>
-          <p>Led three person development team through on time delivery of a J2EE organizational modeling tool</p>
-          <p>Collaborated with team members to provide technical solutions to critical challenges using SOAP, Java, XML and SQL</p>
-        </article>
-        <hr />
-        <article>
-          <h4>Client: J.P. Morgan Partners</h4>
-          <p>Proactively re-architected application to improve maintainability, reliability and scalability</p>
-          <p>Reduced processing time of key data load components by 50%, significantly improving performance</p>
-          <p>Pursued opportunities to develop subordinates’ skills in key technologies</p>
-        </article>
-    </section>
-    <section id="publications" class="container">
-      <h2>Selected Publications, Demos and Presentations</h2>
-      <ul>
-        <li>
-          <span>Dalton, Scot, Sunandan Chakraborty, and Lakshminarayanan Subramanian. 2012.</span> <span><a href="http://ictd2012.org/demos">"Computing the rate of disappearance of arable land in developing regions using satellite images"</a></span><span>. Atlanta, GA: Georgia Institute of Technology.</span>
-        </li>
-        <li>
-          <span>Chakraborty, Sunandan, Scot Dalton, Lakshminarayanan Subramanian, and Yaw Nyarko. 2012.</span> <span><a href="http://www.computational-sustainability.org/compsust12/papers/30.pdf">"Computing the rate of disappearance of cropland using satellite images"</a></span><span>. Copenhagen: University of Copenhagen,.</span>
-        </li>
-        <li>
-          <span>Dalton, Scot. 2010.</span> <span><a href="http://www.exlibrisgroup.org/display/presentations/Integrating+Library+Systems+with+PDS">"Integrating library systems with PDS"</a></span><span>. Jerusalem: Ex Libris.</span>
-        </li>
-        <li>
-          <span>Dalton, Scot. 2009.</span> <span><a href="http://www.exlibrisgroup.org/display/presentations/Ex+Libris+and+Open+Source+at+NYU">"Ex Libris and open source at NYU"</a></span><span>. Jerusalem: Ex Libris.</span>
-        </li>
-        <li>
-          <span>Dalton, Scot. 2009.</span> <span><a href="http://documents.el-una.org/207/">"Providing Primo Delivery Services with Umlaut"</a></span><span>. Richmond: Ex Libris Users of North America.</span>
-        </li>
-        <li>
-          <span>Dalton, Scot, Mikelle Adgate, and Betsy Fuller Matambanadzo. 2008.</span> <span><a href="http://www.perspectivesonglobalissues.com/archives/fall-2008-democracy/southafrica/">"The KwaZulu-Natal Slums Bill: An Illustration of an Institutional Shift in Democracy"</a></span><span>. Perspectives on Global Issues 3 (1) (Fall 2008).</span>
-        </li>
-      </ul>
-    </section>
-    <section id="technologies" class="container">
-      <h2>Technologies</h2>
-      <dl>
-        <dt>Programming Languages</dt>
-        <dd>Ruby, Java, JavaScript, CoffeeScript</dd>
-        <dt>Web Development</dt>
-        <dd>Ruby on Rails, jQuery, Apache Web Server, Nginx</dd>
-        <dt>Databases</dt>
-        <dd>MySQL, PostgreSQL, Oracle</dd>
-        <dt>Testing Tools</dt>
-        <dd>RSpec, Jasmine, Teaspoon</dd>
-        <dt>Development Tools</dt>
-        <dd>TextMate, Eclipse IDE, Git, Subversion,Transmit FTP client, Vi</dd>
-        <dt>Operating Systems</dt>
-        <dd>Unix, Linux, Mac OS X</dd>
-        <dt>Productivity Software</dt>
-        <dd>GitHub, Jenkins, Confluence Wiki, Bugzilla</dd>
-      </dl>
-    </section>
-    <section id="links" class="container">
-      <h2>Selected Links</h2>
-      <ul>
-        <li><a href="https://github.com/scotdalton">Some code</a></li>
-        <li><a href="https://github.com/NYULibraries">Some more code</a></li>
-        <li><a href="http://about.me/scotdalton">about.me</a></li>
-      </ul>
-    </section>
-    <footer class="container">
-      <p>This site was bootstrapped by <a href="http://twitter.github.com/bootstrap">Twitter</a> and <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.</p>
-    </footer>
+    <div ng-view></div>
   </body>
 </html>

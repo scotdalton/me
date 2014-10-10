@@ -6,7 +6,7 @@
 @import "bootstrap/variables";
 @import "bootstrap";
 
-.leader {
+.container {
   margin-top: 1em !important;
   margin-bottom: 1em !important;
   padding-left: 2em;
@@ -19,19 +19,32 @@
 
 .nav {
   background-color: $gray-lighter;
-  &.nav-pills {
-    background-color: $body-bg;
-    li {
-      @include border-radius(4px, 4px);
-      border: 1px solid $gray-lighter;
-      vertical-align: middle;
-      &:hover {
-        background-color: $gray-lighter;
-      }
+}
+
+.nav-pills {
+  li {
+    background-color: $brand-primary;
+    @include border-radius(4px, 4px);
+    border: 2px solid $body-bg;
+    vertical-align: middle;
+    a { color: white; }
+    &:active {
+      @include box-shadow(black 2px 2px 2px 1px inset);
+    }
+    a {
+      background-color: transparent !important;
     }
   }
 }
 
 .detail {
   margin-top: 1em;
+}
+
+body.resume {
+  #tabs {
+    li.resume {
+      @extend .active;
+    }
+  }
 }

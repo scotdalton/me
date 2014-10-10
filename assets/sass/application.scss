@@ -6,6 +6,10 @@
 @import "bootstrap/variables";
 @import "bootstrap";
 
+.page {
+  position: relative;
+}
+
 .container {
   margin-top: 1em !important;
   margin-bottom: 1em !important;
@@ -49,12 +53,4 @@
 
 .detail {
   margin-top: 1em;
-}
-
-body.resume {
-  #tabs {
-    li.resume {
-      @extend .active;
-    }
-  }
 }

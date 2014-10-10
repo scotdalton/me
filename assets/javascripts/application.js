@@ -1,4 +1,4 @@
-angular.module('resumeApp', ['ngRoute','ngAnimate','ui.bootstrap']).
+angular.module('resumeApp', ['ngRoute','ui.bootstrap']).
   config(function($routeProvider) {
     $routeProvider
       .when('/', {
